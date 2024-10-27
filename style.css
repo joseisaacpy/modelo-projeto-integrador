@@ -1,0 +1,209 @@
+/* variaveis / cores padroes */
+:root {
+}
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* formatação de títulos */
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+/* formatação de paragrafos */
+p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+/* formatacao de botoes */
+.btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  border-radius: 25px;
+  border: none;
+  background-color: rgba(218, 204, 44, 0.933);
+
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+/* todos os botoes ao passar o mouse em cima */
+.btn:hover {
+  transform: scale(1.2);
+  /* transform: rotateX(360deg); */
+  box-shadow: 1px 1px 100px 1px white;
+}
+/* header */
+header {
+  z-index: 1;
+  /* position: relative; */
+  /* deixa a barra de nav fixa */
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 5em;
+  top: 0;
+  background-color: transparent;
+  color: #fff;
+}
+/* lista de links */
+nav ul li {
+  display: inline-block;
+  margin-right: 3rem;
+}
+nav ul li a {
+  padding: 0.6rem;
+
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+
+  display: block; /* vai permitir o hover */
+  transition: all 0.5s;
+  opacity: 0.5;
+}
+/* link ao passar o mouse */
+nav ul li a:hover {
+  opacity: 1;
+  transform: scale(1.2); /* vai aumentar o tamanho ao passar o mouse */
+}
+/* logo */
+.logo {
+  user-select: none;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+/* video */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.banner video {
+  opacity: 0.3;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.banner .conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+.conteudo h2 {
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+/* body */
+body {
+  color: #fff;
+  background-color: #000;
+}
+/* main */
+/* seções gerais */
+section {
+  height: 100vh;
+  /* border: 3px solid white; */
+}
+/* seção sobre */
+#sobre {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container-sobre {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem;
+}
+#sobre article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+
+  /* border: 2px solid red; */
+}
+#sobre img {
+  border-radius: 10px;
+}
+#sobre p {
+  margin: 0 4rem;
+}
+/* seção unidades */
+#unidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#unidades article {
+  margin: 4rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#unidades img {
+  border-radius: 10px;
+  opacity: 0.6;
+  transition: all 0.6s;
+}
+#unidades img:hover {
+  opacity: 1;
+}
+#unidades figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* coloca um icone de local antes do texto */
+/* #unidades figcaption::before {
+  content: "";
+  background-image: url(./img/pino-de-localizacao.png);
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+} */
+
+/* footer / rodape */
+footer {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
